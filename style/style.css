@@ -1,3 +1,15 @@
+@keyframes tomber {
+    0%{
+        transform: translateY(-100vh);
+        color: white;
+    }
+    100%{
+        transform: translateY(99vh);
+        color: rgb(204, 198, 198);
+    }
+}
+
+
 *, *::after, *::before{
     box-sizing: border-box;
     margin: 0;
@@ -8,18 +20,47 @@
 
 body{
     color: black;
-    background-image: linear-gradient(90deg, #aa45aa, #ffe);
+    background-image: url(../img/fondAccueil.png);
+    background-repeat: no-repeat;
 }
 
 .container{
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.1)), url(../img/Logo.png);
-    background-position: center;
-    background-size: cover;
+    margin: 0;
 }
 
 .main-accueil{
+    background-color: white;
+    width: 99%;
+    height: 25vw;
+    padding: 1em;
+    margin: 5pt;
+    border-radius: 10px 10px 0 0;
+    opacity: 0.7;
+}
+
+.bloc-presentation{
+
+}
+
+.titre{
     
+}
+
+h1{
+    font-size: xxx-large;
+    opacity: 1;
+}
+
+.description{
+    text-align: center;
+}
+
+@media screen and (max-width:900px){
+    .main-accueil{
+        background-color: white;
+        width: 97%;
+        height: 25vw;
+        padding: 1em;
+        margin: 5pt;
+    }
 }
