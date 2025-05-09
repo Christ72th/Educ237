@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/styleInscription.css">
+    <link rel="stylesheet" href="style/styleAnimation.css">
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+    <title>Educ237 - Inscription</title>
+</head>
+<body>
+    <div class="flocon"></div>
+    <div class="flocon"></div>
+    <div class="flocon"></div>
+    <div class="flocon"></div>
+    <div class="flocon"></div>
+    <div class="flocon"></div>
+    <div class="flocon"></div>
+    <div class="flocon"></div>
+    <div class="flocon"></div>
+    <div class="flocon"></div>
+    <div class="flocon"></div>
+
+    <form action="php/Inscription.php" method="get">
+        <h1>Inscription</h1>
+        <hr>
+        <label for="name">Noms : </label>
+        <input type="text" name="name" id="name" placeholder="Noms" required>
+        <label for="prenom">Prenoms : </label>
+        <input type="text" name="prenom" id="prenom" placeholder="Prenoms" required>
+        <label for="sexe">Sexe : </label>
+        <select name="sexe" id="sexe" placeholder="Sexe" required>
+            <option value="0">Masculin</option>
+            <option value="1">Feminin</option>
+        <label for="date">Date de Naissance : </label>
+        <input type="date" name="date" id="date" required>
+        <label for="lieu">Lieu de Naissance : </label>
+        <input type="text" name="lieu" id="lieu" placeholder="Lieu de Naissance" required>
+        <label for="niveau">Niveau : </label>
+        <select name="niveau" id="niveau" required>
+            <option value="1">6ieme</option>
+            <option value="2">5ieme</option>
+            <option value="3">4ieme</option>
+            <option value="4">3ieme</option>
+            <option value="5">2nde</option>
+            <option value="6">1ere</option>
+            <option value="7">Tle</option>
+        </select>
+        <label for="filiere">Filiere : </label>
+        <select name="filiere" id="filiere" required>
+            <optgroup label="Serie Litteraire">
+                <option value="0">A4 Allemand</option>
+                <option value="1">A4 Espagnol</option>
+                <option value="2">A4 Chinoix</option>
+                <option value="3">A4 Arabe</option>
+            </optgroup>
+            <optgroup label="Serie scientifique">
+                <option value="0">C</option>
+                <option value="1">D</option>
+                <option value="2">E</option>
+                <option value="3">Ti</option>
+            </optgroup>
+            <optgroup label="Serie Technique">
+                <option value="0">F1</option>
+                <option value="1">F2</option>
+                <option value="2">F3</option>
+                <option value="3">F4</option>
+                <option value="4">ESF</option>
+                <option value="5">CG</option>
+                <option value="4">ACC</option>
+            </optgroup>
+        </select>
+        <label for="email">Email : </label>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <input type="submit" value="Allez-Y">
+    </form>
+
+</body>

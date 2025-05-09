@@ -55,6 +55,30 @@ h1{
     text-align: center;
 }
 
+.actions{
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+.actions .btn{
+    margin: 0 0.5em;
+    background-color: darkgray;
+    width: 7em;
+    height: 2em;
+    padding: 5px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 1.3em;
+    box-shadow: 0 0 10px #514569;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
 @media screen and (max-width:900px){
     .main-accueil{
         background-color: white;
