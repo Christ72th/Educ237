@@ -2,11 +2,10 @@ form{
     
     border: solid;
     color: white;
-    height: 35vh;
+    height: 40%;
     padding: 1em;
     width: 30vw;
-    display: grid
-;
+    display: grid;
     position: absolute;
     right: 38vw;
     left: 35vw;
@@ -34,6 +33,7 @@ input[type='submit']{
     form{
         display: grid;
         width: 90%;
+        height: 40%;
         position: absolute;
         left: 5%;
         top: 10%;
