@@ -42,3 +42,17 @@ input[type='submit']{
     border-radius: 2em;
     margin: 1em 2em;
 }
+
+@media screen and (max-width:900px) {
+    form{
+        display: grid;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        top: 10%;
+        border-radius: 1em;
+        border: solid;
+        padding: 1em;
+        font-size: 0.8em;
+    }
+}

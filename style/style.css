@@ -83,8 +83,22 @@ a{
     .main-accueil{
         background-color: white;
         width: 97%;
-        height: 25vw;
+        height: 25vh;
         padding: 1em;
         margin: 5pt;
     }
+        
+    .actions .btn{
+        margin: 0;
+        background-color: darkgray;
+        width: 8em;
+        height: 3em;
+        padding: 5px;
+        text-align: center;
+        border-radius: 20px;
+        font-size: 0.5em;
+        box-shadow: 0 0 10px #514569;
+        cursor: pointer;
+    }
+
 }

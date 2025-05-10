@@ -1,0 +1,31 @@
+form{
+    
+    border: solid;
+    color: white;
+    height: 35vh;
+    padding: 1em;
+    width: 30vw;
+    display: grid
+;
+    position: absolute;
+    right: 38vw;
+    left: 35vw;
+    top: 21vh;
+    border-radius: 10%;
+}
+
+h3{
+    text-align: center;
+    font-size: xxx-large;
+
+}
+
+input[type='submit']{
+    width: 8em;
+    margin: 1em 10em;
+    padding: 0.5em;
+    border: solid 5px #01072fc9;
+    border-radius: 3em;
+
+}
+

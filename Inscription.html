@@ -22,7 +22,7 @@
     <div class="flocon"></div>
     <div class="flocon"></div>
 
-    <form action="php/Inscription.php" method="get">
+    <form action="php/Inscription.php" method="post">
         <h1>Inscription</h1>
         <hr>
         <label for="name">Noms : </label>
@@ -33,8 +33,9 @@
         <select name="sexe" id="sexe" placeholder="Sexe" required>
             <option value="0">Masculin</option>
             <option value="1">Feminin</option>
+        </select>
         <label for="date">Date de Naissance : </label>
-        <input type="date" name="date" id="date" required>
+        <input type="date" name="date" id="date" >
         <label for="lieu">Lieu de Naissance : </label>
         <input type="text" name="lieu" id="lieu" placeholder="Lieu de Naissance" required>
         <label for="niveau">Niveau : </label>
