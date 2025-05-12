@@ -1,0 +1,60 @@
+.en-tete{
+    width: 100vw;
+    height: 15vh;
+    background-color: aliceblue;
+    color: black;
+}
+
+.en-tete h1{
+    text-decoration: underline;
+    text-align: center;
+}
+
+h2{
+    font-size: xx-large;
+}
+
+.actions{
+    position: absolute;
+    right: 0;
+    display: flex;
+    top: 10%;
+}
+
+.actions .btn{
+    margin: 0 0.5em;
+    background-color: darkgray;
+    width: 7em;
+    height: 2em;
+    padding: 5px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 1.3em;
+    box-shadow: 0 0 10px #514569;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:900px){
+        
+    .actions{
+        position: absolute;
+        right: 0;
+        display: flex;
+        top: 12%;
+    }
+
+    .actions .btn{
+        margin: 0;
+        background-color: darkgray;
+        width: 8em;
+        height: 3em;
+        padding: 5px;
+        text-align: center;
+        border-radius: 20px;
+        font-size: 0.5em;
+        box-shadow: 0 0 10px #514569;
+        cursor: pointer;
+    }
+
+}

@@ -19,7 +19,7 @@
 }
 
 body{
-    color: black;
+    color: rgb(255, 255, 255);
     background-image: url(../img/fondAccueil.png);
     background-repeat: no-repeat;
 }
@@ -78,6 +78,7 @@ a{
     text-decoration: none;
     color: black;
 }
+
 
 @media screen and (max-width:900px){
     .main-accueil{

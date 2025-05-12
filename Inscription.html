@@ -31,8 +31,8 @@
         <input type="text" name="prenom" id="prenom" placeholder="Prenoms" required>
         <label for="sexe">Sexe : </label>
         <select name="sexe" id="sexe" placeholder="Sexe" required>
-            <option value="0">Masculin</option>
-            <option value="1">Feminin</option>
+            <option value="M">Masculin</option>
+            <option value="F">Feminin</option>
         </select>
         <label for="date">Date de Naissance : </label>
         <input type="date" name="date" id="date" >
@@ -40,40 +40,42 @@
         <input type="text" name="lieu" id="lieu" placeholder="Lieu de Naissance" required>
         <label for="niveau">Niveau : </label>
         <select name="niveau" id="niveau" required>
-            <option value="1">6ieme</option>
-            <option value="2">5ieme</option>
-            <option value="3">4ieme</option>
-            <option value="4">3ieme</option>
-            <option value="5">2nde</option>
-            <option value="6">1ere</option>
-            <option value="7">Tle</option>
+            <option value="6ieme">6ieme</option>
+            <option value="5ieme">5ieme</option>
+            <option value="4ieme">4ieme</option>
+            <option value="3ieme">3ieme</option>
+            <option value="2nde">2nde</option>
+            <option value="1ere">1ere</option>
+            <option value="Tle">Tle</option>
         </select>
         <label for="filiere">Filiere : </label>
         <select name="filiere" id="filiere" required>
             <optgroup label="Serie Litteraire">
-                <option value="0">A4 Allemand</option>
-                <option value="1">A4 Espagnol</option>
-                <option value="2">A4 Chinoix</option>
-                <option value="3">A4 Arabe</option>
+                <option value="A4 Allemand">A4 Allemand</option>
+                <option value="A4 Espagnol">A4 Espagnol</option>
+                <option value="A4 Chinoix">A4 Chinoix</option>
+                <option value="A4 Arabe">A4 Arabe</option>
             </optgroup>
             <optgroup label="Serie scientifique">
-                <option value="0">C</option>
-                <option value="1">D</option>
-                <option value="2">E</option>
-                <option value="3">Ti</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="Ti">Ti</option>
             </optgroup>
             <optgroup label="Serie Technique">
-                <option value="0">F1</option>
-                <option value="1">F2</option>
-                <option value="2">F3</option>
-                <option value="3">F4</option>
-                <option value="4">ESF</option>
-                <option value="5">CG</option>
-                <option value="4">ACC</option>
+                <option value="F1">F1</option>
+                <option value="F2">F2</option>
+                <option value="F3">F3</option>
+                <option value="F4">F4</option>
+                <option value="ESF">ESF</option>
+                <option value="CG">CG</option>
+                <option value="ACC">ACC</option>
             </optgroup>
         </select>
         <label for="email">Email : </label>
         <input type="email" name="email" id="email" placeholder="Email" required>
+        <label for="password">Mot de Passe</label>
+        <input type="password" name="password" id="password" required>
         <input type="submit" value="Allez-Y">
     </form>
 

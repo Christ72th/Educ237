@@ -1,17 +1,4 @@
-form{
-    
-    border: solid;
-    color: white;
-    height: 40%;
-    padding: 1em;
-    width: 30vw;
-    display: grid;
-    position: absolute;
-    right: 38vw;
-    left: 35vw;
-    top: 21vh;
-    border-radius: 10%;
-}
+
 
 h3{
     text-align: center;
@@ -33,7 +20,6 @@ input[type='submit']{
     form{
         display: grid;
         width: 90%;
-        height: 75%;
         position: absolute;
         left: 5%;
         top: 10%;
@@ -44,6 +30,6 @@ input[type='submit']{
     }
 
     input{
-        width: 22.5em;
+        width: 20em;
     }
 }
