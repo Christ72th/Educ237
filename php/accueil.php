@@ -1,12 +1,4 @@
-<?php
-    include('../include/ConnexionBd.php');
-    include('../include/neige.php');
-    session_start();
-    if(!isset($_SESSION['Matricule'])){
-        header('location:../index.html');
-    }
 
-?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -19,6 +11,16 @@
     <title>Accueil-Educ237</title>
 </head>
 <body>
+
+<?php
+    include('../include/ConnexionBd.php');
+    include('../include/neige.php');
+    session_start();
+    if(!isset($_SESSION['Matricule'])){
+        header('location:../index.html');
+    }
+
+?>
     <?php
         $stmt=$conn->prepare('SELECT * FROM utilisateurs WHERE Matricule = ?');
         $stmt->execute([$_SESSION["Matricule"]]);
@@ -30,6 +32,24 @@
     <div class="en-tete">
         <h1>Educ237 - Tableau de Bord</h1>
         <div class="actions">
+            <div class="btn"><a href="#">Accueil</a></div>
+            <div class="btn" onmouseover="montrerDeroulant('cat')" onmouseout="fermerDeroulant('cat')">
+                Mes sujets<img src="../img/deroulant.png" alt="cat" >
+                <div id="cat" style="display: none;">
+                    <p><a href="ensembleSujet.html">En cours </a></p>
+                    <hr>
+                    <p><a href="ensembleSujet.html">Termines</a></p>
+                </div>
+            </div>
+            
+            <div class="btn" onmouseover="montrerDeroulant('cat1')" onmouseout="fermerDeroulant('cat1')">
+                Mes Parametres<img src="../img/deroulant.png" alt="cat" >
+                <div id="cat1" style="display: none;">
+                    <p><a href="ensembleSujet.html">En cours </a></p>
+                    <hr>
+                    <p><a href="ensembleSujet.html">Termines</a></p>
+                </div>
+            </div>
             <a href="Deconnexion.php"><div class="btn">Deconnexion</div></a>
         </div>
     </div>
@@ -44,5 +64,26 @@
     </h2>
         <?php ?>
 
+
+        <div class="recherche-container">
+            <div class="recherche-champ">
+                <input type="search" name="" id = "" placeholder = "Rechercher un sujet">
+            </div>
+            <img src="../img/recherche.png" alt="">
+        </div>
+
+
 </body>
+
+
+        <script>
+            function montrerDeroulant(champ){
+                document.getElementById(champ).style.display = 'block';
+
+            }
+            function fermerDeroulant(champ){
+                document.getElementById(champ).style.display = 'none';
+
+            }
+        </script>
 </html>

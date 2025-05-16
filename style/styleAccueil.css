@@ -1,3 +1,10 @@
+body{
+    color: rgb(255, 255, 255);
+    background-image: url(../img/fondAccueil1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .en-tete{
     width: 100vw;
     height: 15vh;
@@ -34,6 +41,31 @@ h2{
     cursor: pointer;
 }
 
+.btn select{
+    background-color: unset;
+    width: 1.2em;
+}
+
+.recherche-container{
+    
+    display: flex;
+}
+
+.recherche-champ{
+    width: 50%;
+}
+
+
+input[type='search']{
+    width: 50%;
+    font-size: 1.2em;
+    background-color: rgb(235, 250, 235);
+    padding: 1em;
+    position: relative;
+    text-align: center;
+    border-radius: 2em;
+    margin: 1em 2em;
+}
 
 @media screen and (max-width:900px){
         
