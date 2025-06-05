@@ -13,9 +13,9 @@
 <body>
 
 <?php
+    session_start();
     include('../include/ConnexionBd.php');
     include('../include/neige.php');
-    session_start();
     if(!isset($_SESSION['Matricule'])){
         header('location:../index.html');
     }
@@ -27,6 +27,9 @@
         if($stmt->rowCount() >0){
             $user=$stmt->fetch();
         }
+        
+        $_SESSION['Nom'] = $user['Nom'];
+    include('../include/genererPp.php');
     ?>
 
     <div class="en-tete">
@@ -51,6 +54,12 @@
                 </div>
             </div>
             <a href="Deconnexion.php"><div class="btn">Deconnexion</div></a>
+        </div>
+        <div class="profil">
+            <div class="containerPhoto">
+                <img src="../profilUsers/profil<?php echo $_SESSION['Matricule']?>.png" alt="<?php echo $user['Nom'];?>">
+            </div>
+            <div class="classe"><?php echo $user['Niveau'].' '.$user['Serie'];?></div>
         </div>
     </div>
     

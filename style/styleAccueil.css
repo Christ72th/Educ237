@@ -67,6 +67,28 @@ input[type='search']{
     margin: 1em 2em;
 }
 
+.profil{
+    width: 8em;
+    display: flex;
+    border: solid 1px black;
+    border-radius: 2em;
+    background-color: #ffe;
+    font-size: large;
+}
+
+.containerPhoto{
+    border: solid 1px black;
+    border-radius: 2em;
+    object-fit: contain;
+    background-color: white;
+}
+
+.containerPhoto img{
+    border-radius: 2em;
+    width: 30px;
+    margin: 6px;
+}
+
 @media screen and (max-width:900px){
         
     .actions{

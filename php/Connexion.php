@@ -10,9 +10,13 @@
         if($stmt->rowCount()>0 ){
             $user = $stmt->fetch();
         }
+    echo password_verify($_POST['password'],$user['Motpasse']);
         if($user && password_verify($_POST['password'],$user['Motpasse'])){
             $_SESSION['Matricule']=$user["Matricule"];
             header('location:Accueil.php');
+        }
+        else {
+            header('location:../Connexion.html');
         }
     } catch (PDOEXCEPTION $e) {
         echo $e.getMessage();
