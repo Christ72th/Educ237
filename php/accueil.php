@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/styleAnimation.css">
     <link rel="stylesheet" href="../style/styleAccueil.css">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
     <title>Accueil-Educ237</title>
 </head>
 <body>
@@ -30,6 +31,7 @@
         
         $_SESSION['Nom'] = $user['Nom'];
     include('../include/genererPp.php');
+    //var_dump($_SESSION['Matricule']);
     ?>
 
     <div class="en-tete">
@@ -48,9 +50,9 @@
             <div class="btn" onmouseover="montrerDeroulant('cat1')" onmouseout="fermerDeroulant('cat1')">
                 Mes Parametres<img src="../img/deroulant.png" alt="cat" >
                 <div id="cat1" style="display: none;">
-                    <p><a href="ensembleSujet.html">En cours </a></p>
+                    <p><a href="parametres.php">Afficher </a></p>
                     <hr>
-                    <p><a href="ensembleSujet.html">Termines</a></p>
+                    <p><a href="ModifParametres.php">Modfier</a></p>
                 </div>
             </div>
             <a href="Deconnexion.php"><div class="btn">Deconnexion</div></a>
@@ -59,7 +61,10 @@
             <div class="containerPhoto">
                 <img src="../profilUsers/profil<?php echo $_SESSION['Matricule']?>.png" alt="<?php echo $user['Nom'];?>">
             </div>
-            <div class="classe"><?php echo $user['Niveau'].' '.$user['Serie'];?></div>
+            <div class="info">
+                <div class="classe"><?php echo $user['Niveau'].' '.$user['Serie'];?></div>
+                <div class="age">19 ans</div>
+            </div>
         </div>
     </div>
     

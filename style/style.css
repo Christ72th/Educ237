@@ -1,16 +1,19 @@
 @keyframes tomber {
-    0%{
+    0% {
         transform: translateY(-100vh);
         color: white;
     }
-    100%{
+
+    100% {
         transform: translateY(99vh);
         color: rgb(204, 198, 198);
     }
 }
 
 
-*, *::after, *::before{
+*,
+*::after,
+*::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -18,20 +21,24 @@
     font-family: 'Tw Cen MT', sans-serif;
 }
 
-body{
+body {
     color: rgb(255, 255, 255);
     background-image: url(../img/fondAccueil.png);
     background-repeat: no-repeat;
 }
 
-.container{
+img{
+    cursor: pointer;
+}
+
+.container {
     margin: 0;
 }
 
-.main-accueil{
-    background-color: white;
+.main-accueil {
+    background-color: #fff;
     width: 99%;
-    height: 25vw;
+    height: 10vw;
     padding: 1em;
     margin: 5pt;
     border-radius: 10px 10px 0 0;
@@ -39,30 +46,29 @@ body{
     color: black;
 }
 
-.bloc-presentation{
+.bloc-presentation {}
 
+.logo {
+    display: flex;
+    cursor: pointer;
 }
 
-.titre{
-    
-}
-
-h1{
+h1 {
     font-size: xxx-large;
     opacity: 1;
 }
 
-.description{
+.description {
     text-align: center;
 }
 
-.actions{
+.actions {
     position: absolute;
-    right: 0;
+    right: 10px;
     display: flex;
 }
 
-.actions .btn{
+.actions .btn {
     margin: 0 0.5em;
     background-color: darkgray;
     width: 7em;
@@ -75,32 +81,170 @@ h1{
     cursor: pointer;
 }
 
-a{
+a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 
+.service {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: unset;
+}
 
-@media screen and (max-width:900px){
-    .main-accueil{
+.card {
+    display: flex;
+    width: 20em;
+    border: solid 1px black;
+    height: 15em;
+    padding: 1em;
+    border-radius: 1em 1em 0 0;
+    box-shadow: 1px 1px 5px 5px #010311d4;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: center;
+    background-color: #008aff7a;
+    cursor: pointer;
+}
+
+.card:hover{
+    width: 20.5em;
+    height: 15.1em;
+    border-radius: 1em;
+    transition: all ease 1s;
+}
+
+.card .logo {
+    position: relative;
+    width: 15%;
+    cursor: pointer;
+    opacity: 0.2;
+}
+
+.card .texte {
+    font: italic 100 2em Times New Roman;
+}
+
+hr{
+    margin: 5em;
+    margin-bottom: 3em;
+}
+
+.start{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.start-btn{
+    width: 20%;
+    position: sticky;
+    background-color: #14b2d3;
+    border: solid 1px black;
+    text-align: center;
+    font-size: 2.5em;
+    padding: 0.5em;
+    border-radius: 1.5em;
+    cursor: pointer;
+}
+
+.start-btn:hover{
+    margin-left: 2vw;
+    transition: all 1s ease;
+}
+
+.retour-btn {
+    width: 7.5%;
+    position: sticky;
+    background-color: #14b2d3;
+    border: solid 1px black;
+    text-align: center;
+    font-size: 1em;
+    padding: 0.5em;
+    border-radius: 1.5em;
+    cursor: pointer;
+}
+
+.documentation{
+
+}
+
+footer{
+    
+}
+
+@media screen and (max-width:900px) {
+    .main-accueil {
         background-color: white;
         width: 97%;
         height: 25vh;
         padding: 1em;
         margin: 5pt;
     }
-        
-    .actions .btn{
+
+    .actions .btn {
         margin: 0;
         background-color: darkgray;
-        width: 8em;
-        height: 3em;
-        padding: 5px;
+        width: 7em;
+        height: 2em;
+        padding: 7px;
         text-align: center;
         border-radius: 20px;
-        font-size: 0.5em;
-        box-shadow: 0 0 10px #514569;
+        font-size: 0.9em;
+        box-shadow: 0 0 2px #514569;
+        cursor: pointer;
+        margin-top: 1.5em;
+        margin-right: 8px;
+    }
+    
+    .card {
+        display: flex;
+        width: 15em;
+        border: solid 1px black;
+        height: 9em;
+        padding: 1em;
+        border-radius: 1em 1em 0 0;
+        box-shadow: 1px 1px 5px 5px #010311d4;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        text-align: center;
+        background-color: #008aff7a;
+        cursor: pointer;
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+
+    .card:hover{
+        width: 15.1em;
+        height: 10em;
+        border-radius: 1em;
+        transition: all ease 1s;
+    }
+    .card .texte {
+        font: italic 100 1em Times New Roman;
+    }
+    .card .logo {
+        position: relative;
+        width: 50%;
         cursor: pointer;
     }
 
+    hr{
+        margin: 2em;
+        margin-bottom: 1em;
+    }
+    .start-btn{
+        width: 70%;
+        position: sticky;
+        background-color: #14b2d3;
+        border: solid 1px black;
+        text-align: center;
+        font-size: 2.5em;
+        padding: 0.5em;
+        border-radius: 1.5em;
+        cursor: pointer;
+    }
+    
 }
