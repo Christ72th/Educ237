@@ -67,25 +67,23 @@
             </div>
         </div>
     </div>
-    
-    <h2>Salut <?php if ($user['Sexe'] == 'F') {
+    <!--
+    <h2>Salut <?php /*if ($user['Sexe'] == 'F') {
             $civilite ='Mlle';
         }
         else{
             $civilite = 'M';
         }
-        echo $civilite.' '.$user['Nom'];?>
+        echo $civilite.' '.$user['Nom'];*/?>
     </h2>
         <?php ?>
 
+    -->
 
         <div class="recherche-container">
-            <div class="recherche-champ">
-                <input type="search" name="" id = "" placeholder = "Rechercher un sujet">
-            </div>
-            <img src="../img/recherche.png" alt="">
+                <input type="search" name="recherche" id = "recherche" placeholder = "Rechercher un sujet">
+            <img src="../img/recherche.png" alt="" width = "40px">
         </div>
-
 
 </body>
 
