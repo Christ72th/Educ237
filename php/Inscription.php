@@ -22,7 +22,9 @@
         $stmt->execute([$matricule, $nom, $prenom, $sexe, $lieu, $date, $email, $niveau, $filiere, $password]);
         header('location:../Connexion.html');
     } catch (PDOEXception $e) {
-        if(e->getCode()==1062){
+        if($e->getCode()==1062){
+            $errors[]='Compte existant';
+            $_SESSION['Errors']=$errors;
             echo'Ce compte est existe deja';
             echo'<script>';
                     echo'alert("Cet email est deja associé à un compte")';

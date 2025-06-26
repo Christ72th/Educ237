@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/styleAnimation.css">
-    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
-    <title>Reinitialiser Mot de Passe - Educ237</title>
+    <link rel="stylesheet" href="style/stylereinit.css">
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+    <title>Recuperation de compte - Educ237</title>
 </head>
+
 <body>
-    <form action="" method="post">
-        
+
+    <div class="flocon"></div>
+    <div class="flocon"></div>
+    <div class="flocon"></div>
+    <div class="flocon"></div>
+    <div class="flocon"></div>
+    <div class="flocon"></div>
+    <div class="flocon"></div>
+    <div class="flocon"></div>
+    <div class="flocon"></div>
+    <div class="flocon"></div>
+
+    <form action="php/Reinitialiser.php" method="post">
+        <h1>Recuperation de compte</h1>
+        <hr>
+
+        <label for="email">Email : </label>
+        <input type="email" name="email" id="email" placeholder="Email de recuperation">
+        <input type="submit" value="Envoyer">
     </form>
 </body>
+
 </html>

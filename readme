@@ -1,0 +1,6 @@
+Comment executer?
+
+Dans php.ini decommenter les lignes ';extensions:gd' et '; For Win32 only.
+; https://php.net/smtp
+SMTP = localhost
+; https://php.net/smtp-port'

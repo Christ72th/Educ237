@@ -15,6 +15,25 @@ input[type='submit']{
 
 }
 
+@media screen and (max-width:1150px) {
+    form{
+        display: grid;
+        width: 70%;
+        position: absolute;
+        left: 5%;
+        top: 10%;
+        border-radius: 1em;
+        border: solid;
+        padding: 1em;
+        font-size: 0.8em;
+    }
+    input{
+        width: 90%;
+    }
+    select{
+        width: 90%;
+    }
+}
 
 @media screen and (max-width:900px) {
     form{
